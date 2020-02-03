@@ -12,14 +12,14 @@ var con = mysql.createConnection({
   password: "admin"
 });
 
-con.connect(function(err) {
+/* con.connect(function(err) {
   if (err) throw err;
 
   con.query("SELECT * FROM cactus__items where ID=1096", function (err, result, fields) {
     if (err) throw err;
     console.log(result);
   });
-});
+}); */
 
 server.get("/test", (req, res) => {
   res.send('it works!');
