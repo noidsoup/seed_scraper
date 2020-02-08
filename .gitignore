@@ -1,4 +1,6 @@
 .env
+.dev_env
+
 cactusst_db.sql
 
 # Logs

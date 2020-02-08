@@ -1,6 +1,7 @@
-require("dotenv").config();
+require("dotenv").config()
 const express = require("express");
 const mysql = require('mysql');
+const cron = require("node-cron");
 const path = require('path');
 const csv = require('csvtojson')
 const fastcsv = require("fast-csv");
@@ -10,13 +11,11 @@ const server = express();
 server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
 
-// serve static file https://expressjs.com/en/starter/static-files.html
-
-var con = mysql.createConnection({
-  host: "localhost",
-  database : 'cactusst_db',
-  user: "root",
-  password: "admin"
+const con = mysql.createConnection({
+  host: process.env.HOST,
+  database :  process.env.DATABASE,
+  user: process.env.USER,
+  password: process.env.PASSWORD
 });
 
 // forumlates a request sent to the database
@@ -85,12 +84,17 @@ const createCSV = async () => {
     .pipe(fs.createWriteStream(`csv/productList.csv`));
 } 
 
-server.get("/test", (req, res) => {
-  res.send('it works!');
+server.get("/pull-database", (req, res) => {
+  createCSV();
+  res.send('created csv');
+});
+
+// schedule tasks to be run on the server   
+cron.schedule('0 0 */12 * * *', () => {
+  console.log('running a task every twelve hours');
 });
 
 // Starts the server
 server.listen(port, () => {
   console.log("server started");
-  createCSV();
 });
