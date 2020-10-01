@@ -10,7 +10,7 @@ const uuidv4 = require('uuid/v4');
 
 const server = express();
 server.use(express.static("csv"));
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 const con = mysql.createConnection({
   host: process.env.HOST,
@@ -18,6 +18,8 @@ const con = mysql.createConnection({
   user: process.env.DB_USER,
   password: process.env.PASSWORD
 });
+
+con.on('error', function() {});
 
 // forumlates a request sent to the database
 const query = table => {
@@ -156,6 +158,12 @@ const createCSV = async () => {
     .write(products, { headers: true })
     .on("finish", function() {
       console.log(`Wrote to csv`);
+      con.end(function(err) {
+        if (err) {
+          return console.log('error:' + err.message);
+        }
+        console.log('Closing the database connection.');
+      });
       //resolve();
     })
     .pipe(fs.createWriteStream(`csv/products.csv`));
@@ -171,12 +179,12 @@ server.get("/pull-database", (req, res) => {
 
 // TODO: schedule tasks to be run on the server
 cron.schedule("0 0 */12 * * *", () => {
-  createCSV();
+
   console.log("created CSV");
 });
 
 // Starts the server
 server.listen(port, () => {
   console.log("server started");
-  createCSV();
+  //createCSV();
 });

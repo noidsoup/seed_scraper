@@ -4925,7 +4925,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 5105,5183,1,Select size,Drop Down,25 seeds:1.50~100 seeds:3.50~500 seeds:13.50~1000 seeds:20.00~5000 seeds:75.00,Yes
 5079,5157,1,Select size,Drop Down,10 seeds:3.5~25 seeds:7.00,Yes
 5080,5158,1,Select size,Drop Down,25 seeds:1.50~100 seeds:3.50~500 seeds:13.50~1000 seeds:24.00,Yes
-5081,5159,1,Select size,Drop Down,25 seeds:1.75~100 seeds:5.00,Yes
+5081,5159,1,Select size,Drop Down,25 seeds:1.75,Yes
 5082,5160,1,Select size,Drop Down,25 seeds:1.75~100 seeds:5.00~500 seeds:17.50~1000 seeds:30.00,Yes
 5083,5161,1,Select size,Drop Down,25 seeds:1.75~100 seeds:4.00,Yes
 5084,5162,1,Select size,Drop Down,25 seeds:1.75~100 seeds:5.00,Yes
