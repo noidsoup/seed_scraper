@@ -1,17 +1,17 @@
 ID,Category,Parent,Image,Description,Keywords,Active,HeaderImage,ListImage,CatColumns,CatRows,CatOrder,MetaTitle
-1,Agaves,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Agave Species</strong></span></p>","Agave plants, agave cactus, blue agave cactus, century plants, sales list
+1,Agave species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Agave Species</strong></span></p>","Agave plants, agave cactus, blue agave cactus, century plants, sales list
 ",Yes,,images/Agave_decipiensT.jpg~images/AgaveAmericanaVariegataT.jpg,1,,4,"Agaves, centry plants sales list"
-2,Chollas,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Chollas (Cylindropuntia Species)</strong></span></p>","CYLINDROPUNTIA SPECIES INDEX, CHOLLAS, Acanthocarpa, Buckhorn Cholla, Mail order cholla, buy chollas",Yes,,images/TeddyBearChollaT.jpg~images/CylindropuntiaFuligidaT.jpg,1,,10,CYLINDROPUNTIA SPECIES INDEX
+2,Chollas species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Chollas (Cylindropuntia Species)</strong></span></p>","CYLINDROPUNTIA SPECIES INDEX, CHOLLAS, Acanthocarpa, Buckhorn Cholla, Mail order cholla, buy chollas",Yes,,images/TeddyBearChollaT.jpg~images/CylindropuntiaFuligidaT.jpg,1,,10,CYLINDROPUNTIA SPECIES INDEX
 3,Opuntia species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Opuntia Species</strong></span></p>","Opuntia speciesOpuntia, Prickly Pear, pear cactus, Opuntia species",Yes,,images/0putniaStreptacanthsT.jpg~images/OpuntiaAlbaspina.jpg,1,,22,Opuntia species
-4,Aloes,90,,"<div><span style=""color: #006633; font-size: medium;""><strong>ALOE SPECIES</strong></span></div>
-<div><strong><span style=""color: #ff0000;""> </span></strong></div>","ALOE SPECIES, Aloe vera,long list of aloes and other succulents",No,,images/AloeNobelisT.jpg~images/AloeBrevifoliaT.jpg,1,,5,"ALOE SPECIES, Aloe vera,long list of aloes and other succulents"
+4,Aloe species,90,,"<div><span style=""color: #006633; font-size: medium;""><strong>ALOE SPECIES</strong></span></div>
+<div><strong><span style=""color: #ff0000;"">&nbsp;</span></strong></div>","ALOE SPECIES, Aloe vera,long list of aloes and other succulents",No,,images/AloeNobelisT.jpg~images/AloeBrevifoliaT.jpg,1,,5,"ALOE SPECIES, Aloe vera,long list of aloes and other succulents"
 5,Euphorbia species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Euphorbia Species</strong></span></p>",EUPHORBIA SPECIES,Yes,,images/EuphorbiaTirucalliT.jpg~images/EuphorbiaResiniferaT.jpg,1,,16,EUPHORBIA SPECIES 
-6,Trichocereus,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Trichocerus Species</strong></span></p>",Trichocereus Species,Yes,,images/TrichocereusT.jpg~images/TrichocereusPeruT.jpg,1,,25,Trichocereus Species
+6,Trichocereus species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Trichocerus Species</strong></span></p>",Trichocereus Species,Yes,,images/TrichocereusT.jpg~images/TrichocereusPeruT.jpg,1,,25,Trichocereus Species
 541,Succulent collections,90,,"<p>Succulent Collections. Great assortment of different colors,  textures and forms.&nbsp;&nbsp; Drought tolerant. Plants are well rooted, includes pot, soil and label with common and    botanical names and planting directions. Plants in 2.5"" pots range in   size from 2.5 to 3.5  inches. Plants in 3.5 inch post range in size from   3"" to 5"". Create your own container garden or  centerpiece   using&nbsp; these very popular succulents, or buy in bulk to use  as wedding   or party favors.</p>",Succulent collections,No,,images/AssortedSucculentsT.JPG,1,,26,Succulent collections
 7,Barrel type (Globular),90,,"<p align=""center""><strong><span style=""color: #006633; font-size: medium;"">Barrel type Cacti (Globular)</span></strong></p>","ferocactus, Barrel Cacti and barrel shaped cacti",Yes,,images/FerocactusStainesii.jpg~images/FerocactusHerrerae.jpg,1,,8,Barrel Cacti types
 8,Echinocereus species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Echinocereus species (Hedgehogs)<br /></strong></span></p>","ECHINOCEREUS species, Rainbow cactus, Hedgehog, ",Yes,,images/EchinocereusCoccineusT.jpg~images/EchinocereusFendleriT.jpg,1,,14,"ECHINOCEREUS, Rainbow cactus, Hedgehog"
-9,Yucca,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Yucca Species</strong></span></p>","Yucca Aloifolia, Spanish Bayonet,a mail order yucca",Yes,,images/YuccaWhipplei.jpg~images/YuccaStricta.jpg,1,,28,Yucca index
-10,Golden Barrel ,90,,"<p align=""center""><span style=""color: #008000;""><strong><span style=""font-size: small;"">Golden Barrel (Echinocactus Grusonii)</span></strong></span></p>","Echinocactus Grusonii, Golden Barrel Cacti,
+9,Yucca species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Yucca Species</strong></span></p>","Yucca Aloifolia, Spanish Bayonet,a mail order yucca",Yes,,images/YuccaWhipplei.jpg~images/YuccaStricta.jpg,1,,28,Yucca index
+10,Golden Barrel species,90,,"<p align=""center""><span style=""color: #008000;""><strong><span style=""font-size: small;"">Golden Barrel (Echinocactus Grusonii)</span></strong></span></p>","Echinocactus Grusonii, Golden Barrel Cacti,
 Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Grusonii
 12,Crassula species (Jades),90,,"<p align=""center""><strong><span style=""font-size: medium;"">&nbsp;Crassula Species (Jades)<br /></span></strong></p>",Crassula Species (Jades),No,,images/crassulaspeciesT.JPG,1,,12,Crassula Species (Jades)
 13,Mammillaria species,90,,"<p align=""center""><span style=""color: #006633; font-size: medium;""><strong>Mammillaria Species</strong></span></p>
@@ -144,7 +144,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 133,Blossfeldia,100,,<p><strong>Blossfeldia Species Seeds</strong></p>,Blossfeldia Species Seeds,Yes,,,1,,38,Blossfeldia Species Seeds
 135,Bolivicereus,100,,<p><strong>Bolivicereus Species Seeds</strong></p>,Bolivicereus Species Seeds,Yes,,,1,,39,Bolivicereus Species Seeds
 136,Borzicactus,100,,<p><strong>Borzicactus Species Seeds</strong></p>,Borzicactus Species Seeds,No,,,1,,40,Borzicactus Species Seeds
-138,Buiningia,100,,<p><strong>Buiningia Species Seeds</strong></p>,Buiningia Species Seeds,Yes,,,1,,43,Buiningia Species Seeds
+138,Buiningia,100,,<p><strong>Buiningia Species Seeds</strong></p>,Buiningia Species Seeds,No,,,1,,43,Buiningia Species Seeds
 139,Carnegiea,100,,<p><strong>Carnegiea Species Seeds</strong></p>,Carnegiea Species Seeds,Yes,,,1,,44,Carnegiea Species Seeds
 140,Castellanosia,100,,<p><strong>Castellanosia Species Seeds</strong></p>,Castellanosia Species Seeds,Yes,,,1,,45,Castellanosia Species Seeds
 141,Cephalocereus,100,,<p><strong>Cephalocereus Species Seeds</strong></p>,Cephalocereus Species Seeds,Yes,,,1,,46,Cephalocereus Species Seeds
@@ -171,7 +171,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 163,Echinomastus,100,,<p><strong>Echinomastus Species Seeds</strong></p>,Echinomastus Species Seeds,No,,,1,,68,Echinomastus Species Seeds
 164,Echinopsis,100,,"<p><strong>Echinopsis Species Seeds. Now included under <strong>Echinopsis</strong> are<strong> Pseudolobivia, </strong>Lobivia. Trichocereus.<br /></strong></p>","Echinopsis, Pseudolobivia, Lobivia, trichocereus.",Yes,,,1,15,69,"Echinopsis, Pseudolobivia, Lobivia. trichocereus."
 165,Encephalocarpus,100,,<p><strong>Encephalocactus Species Seeds (Syn: Encephalocactus)</strong></p>,Encephalocactus Species Seeds,No,,,1,,70,Encephalocactus Species Seeds
-166,Epithelantha,100,,<p><strong>Epithelantha Species Seeds</strong></p>,Epithelantha Species Seeds,Yes,,,1,,71,Epithelantha Species Seeds
+166,Epithelantha,100,,<p><strong>Epithelantha Species Seeds</strong></p>,Epithelantha Species Seeds,No,,,1,,71,Epithelantha Species Seeds
 167,Erdisia ,100,,<p><strong>Erdisia Species Seeds</strong></p>,Erdisia Species Seeds,Yes,,,1,,73,Erdisia Species Seeds
 168,Eriocactus,100,,<p><strong>Eriocactus Species Seeds (Syn: Notocactus)</strong></p>,Eriocactus Species Seeds,Yes,,,1,,74,Eriocactus Species Seeds
 169,Eriosyce ,100,,<p><strong>Eriosyce Species Seeds</strong></p>,Eriosyce Species Seeds,Yes,,,1,,75,Eriosyce Species Seeds
@@ -240,19 +240,19 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 295,Mustard Seeds,233,,<p><strong>Mustard Seeds</strong></p>,Mustard Seeds,No,,images/Mustard_GreensT.jpg,1,,26,Mustard Seeds
 231,HERB SEED INDEX,0,,"<p><span style=""font-size: small;""><strong>HERB SEED INDEX</strong></span></p>",HERB SEED INDEX,Yes,,images/Echinacea_purpureaWC_T2.JPG,3,10,10,HERB SEED INDEX
 237,Beet Seeds,233,,<p>Beet Seeds</p>,Beet Seeds,Yes,,images/beets_T.JPG,1,,7,Beet Seeds
-233,VEGETABLE SEED INDEX,0,,<p><strong>Phoenix Desert Nursery now offers vegetable seeds. We carry the best Heirloom and Organic Seeds. All of our seeds are NON-GMO. We guarantee high germination rates for all vegetable seed.</strong></p>,"VEGETABLE SEED INDEX, Vegetable seeds",Yes,,images/beets_T.JPG,4,,14,"VEGETABLE SEED INDEX, Vegetable seeds"
+233,VEGETABLE SEED INDEX,0,,<p><strong>Phoenix Desert Nursery now offers vegetable seeds. We carry the best Heirloom and Organic Seeds. All of our seeds are NON-GMO. We guarantee high germination rates for all vegetable seed.</strong></p>,"VEGETABLE SEED INDEX, Vegetable seeds",No,,images/beets_T.JPG,4,,14,"VEGETABLE SEED INDEX, Vegetable seeds"
 232,Medicinal Herb Seed List,231,,"<p><span style=""font-size: small;""><strong>Medicinal Herb Seed List</strong></span></p>",Medicinal Herb Seed List,Yes,,images/Echinacea_purpureaWC_T2.JPG,1,,2,Medicinal Herb Seed List
 302,MICROGREENS,233,,"<p><strong>MICROGREENS are kitchen counter plants that have an intense flavor and high nutritional value that exceeds traditional sprouts and baby greens. The tiny leaves can be harvested is less than 14 days, many within a week. These tiny sprouts have very tender and flavorful leaves and stems. Great for salads, on sandwiches and as a garnish.</strong></p>",Microgreens ,No,images/micro-greens.jpeg,images/micro-greens.jpeg,1,,1,Microgreens 
-234,Artichoke Seeds,233,,<p><strong>Artichoke Seeds</strong></p>,Artichoke Seeds,Yes,,images/ArtichokeGreenGlobe_T.JPG,1,,3,Artichoke Seeds
+234,Artichoke Seeds,233,,<p><strong>Artichoke Seeds</strong></p>,Artichoke Seeds,No,,images/ArtichokeGreenGlobe_T.JPG,1,,3,Artichoke Seeds
 235,Arugula Seeds,233,,<p><strong>Arugula Seeds</strong></p>,Arugula Seeds,No,,images/Arugula_T.JPG,1,,4,Arugula Seeds
-236,Bean Seeds,233,,"<p><strong>Beans (</strong><strong>Phaseolus vulgaris) </strong><strong>are warm season crops and frost tender. Plant during spring, after frost, and harvest during warm summer months. Can be grown year round in greenhouse.<br /></strong></p>",Bean Seeds,Yes,,images/BeanBush-BlackValentineT.JPG,1,,6,Bean Seeds
+236,Bean Seeds,233,,"<p><strong>Beans (</strong><strong>Phaseolus vulgaris) </strong><strong>are warm season crops and frost tender. Plant during spring, after frost, and harvest during warm summer months. Can be grown year round in greenhouse.<br /></strong></p>",Bean Seeds,No,,images/BeanBush-BlackValentineT.JPG,1,,6,Bean Seeds
 294,Melon Seeds,233,,<p><strong>Melon Seeds</strong></p>,Melon Seeds,No,,images/melon2.jpg,1,10,25,Melon Seeds
 238,Broccoli Seeds,233,,<p><strong>Broccoli Seeds</strong></p>,Broccoli Seeds,No,,images/BroccoliT.JPG,1,,8,Broccoli Seeds
 239,Brussel Sprout Seeds,233,,<h2>Brussel Sprout Seeds</h2>,Brussel Sprout seeds,No,,images/brussels-sproutsT.JPG,1,,9,Brussel Sprout seeds
 240,Cabbage Seeds,233,,<p><strong>Cabbage Seeds</strong></p>,Cabbage Seeds,Yes,,images/CabbageT.JPG,1,,10,Cabbage Seeds
 241,Carrot Seeds,233,,<p><strong>Carrot Seeds</strong></p>,Carrot Seeds,No,,images/CarrotT.JPG,1,,11,Carrot Seeds
 242,Cauliflower Seeds,233,,<h2>Cauliflower Seeds</h2>,Cauliflower Seeds,Yes,,images/cauliflowerT.JPG,1,,12,Cauliflower Seeds
-243,Corn Seeds,233,,<h2>Corn Seeds</h2>,Corn Seeds,Yes,,images/cornT.JPG,1,,15,Corn Seeds
+243,Corn Seeds,233,,<h2>Corn Seeds</h2>,Corn Seeds,No,,images/cornT.JPG,1,,15,Corn Seeds
 244,Celery Seeds,233,,<p><strong>Celery Seeds</strong></p>,Celery Seeds,No,,images/celeryT.JPG,1,,13,Celery Seeds
 245,Collard Seeds,233,,<p>Collards Seed</p>,Collards Seed,No,,images/collardsT.JPG,1,,14,Collards Seed
 246,Cucumber Seeds,233,,<p><strong>Cucumber Seeds</strong></p>,Cucumber Seeds,Yes,,images/CucumberT.JPG,1,,16,Cucumber Seeds
@@ -345,7 +345,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 343,Anacampseros Seeds,101,,<p><strong>Anacampseros Species Seeds</strong></p>,Anacampseros Species Seeds,Yes,,,1,,27,Anacampseros Species Seeds
 344,Antimima Seeds,101,,<p><strong><strong>Antimima</strong> Species Seeds</strong></p>,Antimima Species Seeds,Yes,,,1,,28,Antimima Species Seeds
 457,Abies Seeds,103,,<p>Abies Species Seeds</p>,Abies Species Seeds,No,,,1,,6,Abies Species Seeds
-346,Avonia Seeds,101,,<p><strong>Avonia Species Seeds</strong></p>,Avonia Species Seeds,Yes,,,1,,30,Avonia Species Seeds
+346,Avonia Seeds,101,,<p><strong>Avonia Species Seeds</strong></p>,Avonia Species Seeds,No,,,1,,30,Avonia Species Seeds
 347,Beaucarnea Seeds,101,,<p><span><strong>Beaucarnea Species Seeds</strong><br /></span></p>,Beaucarnea Species Seeds,Yes,,,1,,31,Beaucarnea Species Seeds
 348,Bergeranthus Seeds,101,,<p><strong>Bergeranthus Species Seeds</strong></p>,Bergeranthus Species Seeds,Yes,,,1,,32,Bergeranthus Species Seeds
 349,Bijlia Seeds,101,,<p><strong>Bijlia Species Seeds</strong></p>,Bijlia Species Seeds,Yes,,,1,,33,Bijlia Species Seeds
@@ -498,7 +498,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 500,Mimosa Seeds,103,,<p><strong>Mimosa Species Seeds</strong></p>,Mimosa Species Seeds,Yes,,,1,,50,Mimosa Species Seeds
 501,Olneya Seeds,103,,<p><strong>Olneya Species Seeds</strong></p>,Olneya Species Seeds,Yes,,,1,,51,Olneya Species Seeds
 502,Parkinsonia Seeds,103,,<p><strong>Parkinsonia Species Seeds (</strong>see<span> <strong>Cercidium</strong> for more palo verde seeds)<br /></span></p>,Parkinsonia Species Seeds,Yes,,,1,,52,Parkinsonia Species Seeds
-503,Pinus Seeds,103,,<p><strong>Pinus Species Seeds</strong></p>,Pinus Species Seeds,No,,,1,,53,Pinus Species Seeds
+503,Pinus Seeds,103,,<p><strong>Pinus Species Seeds</strong></p>,Pinus Species Seeds,Yes,,,1,,53,Pinus Species Seeds
 504,Pistacia Seeds,103,,<p><strong>Pistacia Species Seeds</strong></p>,Pistacia Species Seeds,No,,,1,,54,Pistacia Species Seeds
 505,Pithecellobium Seeds,103,,<p><strong>Pithecellobium Species Seeds</strong></p>,Pithecellobium Species Seeds,Yes,,,1,,55,Pithecellobium Species Seeds
 506,Proboscidea Seeds,103,,<p><strong>Proboscidea Species Seeds</strong></p>,Proboscidea Species Seeds,Yes,,,1,,56,Proboscidea Species Seeds
@@ -512,7 +512,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 514,Ribes Seeds,103,,<p><strong>Ribes Species Seeds</strong></p>,Ribes Species Seeds,Yes,,,1,,65,Ribes Species Seeds
 515,Rosa Seeds,103,,<p><strong>Rosa Species Seeds</strong></p>,Rosa Species Seeds,Yes,,,1,,66,Rosa Species Seeds
 516,Sambucus Seeds,103,,<p><strong>Sambucus Species Seeds</strong></p>,Sambucus Species Seeds,Yes,,,1,,67,Sambucus Species Seeds
-517,Sapindus Seeds,103,,<p><strong>Sapindus Species Seeds</strong></p>,Sapindus Species Seeds,No,,,1,,68,Sapindus Species Seeds
+517,Sapindus Seeds,103,,<p><strong>Sapindus Species Seeds</strong></p>,Sapindus Species Seeds,Yes,,,1,,68,Sapindus Species Seeds
 519,Schinus Seeds,103,,<p><strong>Schinus Species Seeds</strong></p>,Schinus Species Seeds,No,,,1,,70,Schinus Species Seeds
 520,Senna Seeds,103,,<p><strong>Senna Species Seeds</strong></p>,Senna Species Seeds,Yes,,,1,,71,Senna Species Seeds
 521,Simmondsia Seeds,103,,<p><strong>Simmondsia Species Seeds</strong></p>,Simmondsia Species Seeds,Yes,,,1,,73,Simmondsia Species Seeds
@@ -521,9 +521,9 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 524,Tecoma Seeds,103,,<p><strong>Tecoma Species Seeds</strong></p>,Tecoma Species Seeds,Yes,,,1,,76,Tecoma Species Seeds
 525,Vauquelinia Seeds,103,,<p><strong>Vauquelinia Species Seeds</strong></p>,Vauquelinia Species Seeds,Yes,,,1,,78,Vauquelinia Species Seeds
 526,Viguiera Seeds,103,,<p><strong>Viguiera Species Seeds</strong></p>,Viguiera Species Seeds,Yes,,,1,,80,Viguiera Species Seeds
-527,Vitex Seeds,103,,<p><strong>Vitex Species Seeds</strong></p>,Vitex Species Seeds,Yes,,,1,,81,Vitex Species Seeds
+527,Vitex Seeds,103,,<p><strong>Vitex Species Seeds</strong></p>,Vitex Species Seeds,No,,,1,,81,Vitex Species Seeds
 528,Vitis Seeds,103,,<p><strong>Vitis Species Seeds</strong></p>,Vitis Species Seeds,Yes,,,1,,82,Vitis Species Seeds
-529,Ziziphus Seeds,103,,<p><strong>Ziziphus Species Seeds</strong></p>,Ziziphus Species Seeds,Yes,,,1,,84,Ziziphus Species Seeds
+529,Ziziphus Seeds,103,,<p><strong>Ziziphus Species Seeds</strong></p>,Ziziphus Species Seeds,No,,,1,,84,Ziziphus Species Seeds
 530,Washingtonia Seeds,103,,<p><strong>Washingtonia Species Seeds</strong></p>,Washingtonia Species Seeds,Yes,,,1,,83,Washingtonia Species Seeds
 531,Pachypodium Seeds,101,,<p><strong>Pachypodium Species Species</strong></p>,Pachypodium Species Species,Yes,,,1,,110,Pachypodium Species Species
 532,Sale: Wildflower Mix ,93,,<p>Sale: Wildflower Mix</p>,Sale: Wildflower Mix ,Yes,,,,,39,Sale: Wildflower Mix 
@@ -531,10 +531,10 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 534,Shepherdia species,103,,<p>Shepherdia species</p>,Shepherdia species,Yes,,,1,,72,
 536,Brachychiton Seeds,103,,<p>Brachychiton Species</p>,Brachychiton Species,Yes,,,1,10,18,Brachychiton Species
 537,Ulmus Seeds,103,,<p><strong>Ulmus Species Seeds</strong></p>,Ulmus Seeds,Yes,,,1,,77,Ulmus Seeds
-538,Cleistocactus,90,,<p>Cleistocactus Species</p>,Cleistocactus Species,Yes,,images/CleistocactusmargaritanusT.JPG,1,,11,Cleistocactus Species
+538,Cleistocactus species,90,,<p>Cleistocactus Species</p>,Cleistocactus Species,Yes,,images/CleistocactusmargaritanusT.JPG,1,,11,Cleistocactus Species
 539,Ferocactus species,90,,<p>Ferocactus Species</p>,Ferocactus Species,Yes,,images/FerocactusGlaucescensT.jpg,1,,17,Ferocactus species
 540,Notocactus species,90,,<p>Notocactus Species</p>,Notocactus Species,Yes,,images/notocactus-magnificusT.JPG,1,,21,Notocactus species
-542,Graptoveria,90,,"<p>Graptoveria are hybrid crosses between Graptopetalum and Echeveria. A diverse genus, most are low growing, cultivated for their beautiful shapes and colours.Plants are well rooted, includes pot, soil and label with common and    botanical names and planting directions. Plants in 2.5"" pots range in   size from 2.5 to 3.5  inches. Plants in 3.5 inch post range in size from   3"" to 5"". <strong>Create your own container garden or  centerpiece   using&nbsp; these very popular succulents, or buy in bulk to use  as wedding   or party favors.</strong></p>
+542,Graptoveria species,90,,"<p>Graptoveria are hybrid crosses between Graptopetalum and Echeveria. A diverse genus, most are low growing, cultivated for their beautiful shapes and colours.Plants are well rooted, includes pot, soil and label with common and    botanical names and planting directions. Plants in 2.5"" pots range in   size from 2.5 to 3.5  inches. Plants in 3.5 inch post range in size from   3"" to 5"". <strong>Create your own container garden or  centerpiece   using&nbsp; these very popular succulents, or buy in bulk to use  as wedding   or party favors.</strong></p>
 <p>CULTIVATION TIPS<br />Graptoveria are hardy plants requiring porous soil with excellent drainange. Water regularly over the summer months letting the soil dry out between waterings. Minimal water is required over winter. Fertilize once during the growing season with a balanced fertilizer diluted to &frac14; strength. All do best in sun or part sun.</p>",Graptoveria Species,No,,images/GraptoveriaTitubansT.JPG,1,,19,Graptoveria Species
 543,Anacampseros species,90,,<p>Anacampseros Species</p>,Anacampseros Species,No,,images/Anacampseros-rufescensT.JPG,1,,6,Anacampseros Species
 544,Pleiospilos species,90,,<p>Pleiospilos Species</p>,Pleiospilos Species,No,,images/PleiospilosneliiT.JPG,1,,24,Pleiospilos Species
@@ -574,7 +574,7 @@ Mail order golden barrel",Yes,,images/GoldenBarrelT.jpg,1,,18,Echinocactus Gruso
 578,Arabis,93,,<p>Arabis Species Seeds</p>,Arabis Species Seeds,Yes,,,1,,24,
 579,Argemone,93,,<p>Argemone Species Seeds</p>,Argemone Species Seeds,Yes,,,1,,25,Argemone Species Seeds
 580,Asclepias ,93,,<p>Asclepias Species Seeds</p>,Asclepias Species Seeds,Yes,,,1,,26,Asclepias Species Seeds
-581,Fertilizer,0,,<p>Fertilizer</p>,Soil and Fertilizer,Yes,,images/CactusStoreSeedGerminationMixT.JPG,1,,15,Soil and Fertilizer
+581,Fertilizer,0,,<p>Fertilizer</p>,Soil and Fertilizer,No,,images/CactusStoreSeedGerminationMixT.JPG,1,,15,Soil and Fertilizer
 582,Aster,93,,<p>Aster Species Seeds</p>,Aster Species Seeds,Yes,,,1,,27,Aster Species Seeds
 583,Astragalus,93,,<p>Astragalus Species Seeds</p>,Astragalus Species Seeds,Yes,,,1,,28,Astragalus Species Seeds
 584,Aubrieta,93,,<p><span>Aubrieta Species Seeds<br /></span></p>,Aubrieta Species Seeds,Yes,,,1,,29,Aubrieta Species Seeds

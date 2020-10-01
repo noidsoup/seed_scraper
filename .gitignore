@@ -1,5 +1,5 @@
 .env
-.prod_env
+.production_env
 
 cactusst_db.sql
 

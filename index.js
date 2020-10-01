@@ -10,12 +10,12 @@ const uuidv4 = require('uuid/v4');
 
 const server = express();
 server.use(express.static("csv"));
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 const con = mysql.createConnection({
   host: process.env.HOST,
   database: process.env.DATABASE,
-  user: process.env.USER,
+  user: process.env.DB_USER,
   password: process.env.PASSWORD
 });
 
