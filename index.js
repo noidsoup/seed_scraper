@@ -9,7 +9,7 @@ const fs = require("fs");
 const uuidv4 = require('uuid/v4');
 
 const server = express();
-server.use(express.static("csv"));
+server.use(express.static(__dirname + 'csv'));
 const port = process.env.PORT || 3000;
 
 const con = mysql.createConnection({
@@ -21,10 +21,12 @@ const con = mysql.createConnection({
 
 con.on('error', function() {});
 
+
+
 // forumlates a request sent to the database
 const query = table => {
   return new Promise((resolve, reject) => {
-    con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
+/*     con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
       if (err) throw err;
 
       const jsonData = JSON.parse(JSON.stringify(data));
@@ -36,7 +38,7 @@ const query = table => {
           resolve();
         })
         .pipe(fs.createWriteStream(`csv/${table}.csv`));
-    });
+    }); */
   });
 };
 
