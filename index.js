@@ -9,7 +9,8 @@ const fs = require("fs");
 const uuidv4 = require('uuid/v4');
 
 const server = express();
-server.use(express.static(__dirname + 'csv'));
+
+server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
 
 const con = mysql.createConnection({
