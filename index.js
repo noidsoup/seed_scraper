@@ -172,7 +172,7 @@ const createCSV = async () => {
 };
 
 server.get("/pull-database", (req, res) => {
-  createCSV();
+  //createCSV();
   res.send("created csv");
 });
 
