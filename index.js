@@ -176,6 +176,15 @@ server.get("/pull-database", (req, res) => {
   res.send("created csv");
 });
 
+server.get('/get-products', (req, res) => {
+
+  fs.readFile('./csv/products.csv', (err, json) => {
+      let obj = JSON.parse(json);
+      res.json(obj);
+  });
+
+});
+
 // STATIC IP for whitlisting on hostmonster
 //https://github.com/mysqljs/mysql/issues/725
 
