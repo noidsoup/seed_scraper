@@ -21,7 +21,7 @@ const con = mysql.createConnection({
 con.on('error', function(err) {
   throw err;
 });
-console.log(process.env.QUOTAGUARDSTATIC_URL, process.env.HOST);
+console.log(process.env.HOST);
 
 // forumlates a request sent to the database
 const query = table => {
