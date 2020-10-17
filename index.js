@@ -18,9 +18,10 @@ const con = mysql.createConnection({
   password: process.env.DB_PASSWORD
 });
 
-con.on('error', function() {});
+con.on('error', function(err) {
+  throw err;
+});
 console.log(process.env.QUOTAGUARDSTATIC_URL, process.env.HOST);
-
 
 // forumlates a request sent to the database
 const query = table => {
