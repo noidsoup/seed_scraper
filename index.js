@@ -6,18 +6,15 @@ const path = require("path");
 const csv = require("csvtojson");
 const fastcsv = require("fast-csv");
 const fs = require("fs");
-const uuidv4 = require('uuid/v4');
-
 const server = express();
 
 server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
-
+console.log(process.env.DB_USER);
 const con = mysql.createConnection({
   host: process.env.HOST,
   database: process.env.DATABASE,
   user: process.env.DB_USER,
-  password: process.env.PASSWORD
 });
 
 con.on('error', function() {});
@@ -27,7 +24,7 @@ con.on('error', function() {});
 // forumlates a request sent to the database
 const query = table => {
   return new Promise((resolve, reject) => {
-/*     con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
+    con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
       if (err) throw err;
 
       const jsonData = JSON.parse(JSON.stringify(data));
@@ -39,7 +36,7 @@ const query = table => {
           resolve();
         })
         .pipe(fs.createWriteStream(`csv/${table}.csv`));
-    }); */
+    });
   });
 };
 
@@ -167,13 +164,13 @@ const createCSV = async () => {
         }
         console.log('Closing the database connection.');
       });
-      //resolve();
+
     })
     .pipe(fs.createWriteStream(`csv/products.csv`));
 };
 
 server.get("/pull-database", (req, res) => {
-  //createCSV();
+  createCSV();
   res.send("created csv");
 });
 
@@ -198,5 +195,5 @@ cron.schedule("0 0 */12 * * *", () => {
 // Starts the server
 server.listen(port, () => {
   console.log("server started");
-  //createCSV();
+  createCSV();
 });
