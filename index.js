@@ -205,8 +205,8 @@ const createCSV = async (con) => {
 };
 
 server.get("/pull-database", (req, res) => {
-  createCSV();
-  res.send("created csv");
+  connection();
+  res.send("createing csv");
 });
 
 server.get('/get-products', (req, res) => {
@@ -216,11 +216,6 @@ server.get('/get-products', (req, res) => {
       let obj = JSON.parse(json);
       res.json(obj);
   });
-
-});
-
-// TODO: schedule tasks to be run on the server
-cron.schedule('* * * * *', () => {
 
 });
 
