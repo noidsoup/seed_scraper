@@ -28,28 +28,36 @@ var sock_options = {
   pass: pass
 }
 
-var sockConn = new SocksConnection(remote_options, sock_options);
-
 server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
-console.log(process.env.DB_USER);
 
-const con = mysql.createConnection({
-  database: process.env.DATABASE,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  stream: sockConn
-});
+const connection = () => {
+
+  let sockConn = new SocksConnection(remote_options, sock_options);
+
+  let con = mysql.createConnection({
+    database: process.env.DATABASE,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    stream: sockConn
+  });
+
+  con.on('error', function(err) {
+    throw err;
+  });
+  
+  createCSV(con);
+  
+}
+
 
 // https://support.quotaguard.com/support/solutions/articles/5000543888-accessing-a-mysql-database-via-a-static-ip-from-node-js-
 
-con.on('error', function(err) {
-  throw err;
-});
-console.log(process.env.HOST);
+
 
 // forumlates a request sent to the database
-const query = table => {
+const query = (table, con) => {
+
   return new Promise((resolve, reject) => {
     con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
       if (err) throw err;
@@ -168,10 +176,10 @@ const formatData = (items, options, categories) => {
 };
 
 // creates the csv for the two relevant tables in the remote database
-const createCSV = async () => {
-  await query("cactus__items");
-  await query("cactus__options");
-  await query("cactus__categories");
+const createCSV = async (con) => {
+  await query("cactus__items", con);
+  await query("cactus__options", con);
+  await query("cactus__categories", con);
 
   const items = await csv().fromFile("csv/cactus__items.csv");
   const options = await csv().fromFile("csv/cactus__options.csv");
@@ -213,12 +221,18 @@ server.get('/get-products', (req, res) => {
 
 // TODO: schedule tasks to be run on the server
 cron.schedule('* * * * *', () => {
-  console.log('running a task every minute');
-  createCSV();
+
+});
+
+cron.schedule('0 0 */12 * * *', function(){
+  console.log('running a task every twelve hours');
+  
+  connection();
+
 });
 
 // Starts the server
 server.listen(port, () => {
   console.log("server started");
-  createCSV();
+  connection();
 });
