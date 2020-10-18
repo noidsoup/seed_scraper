@@ -214,6 +214,7 @@ server.get('/get-products', (req, res) => {
 // TODO: schedule tasks to be run on the server
 cron.schedule('* * * * *', () => {
   console.log('running a task every minute');
+  createCSV();
 });
 
 // Starts the server
