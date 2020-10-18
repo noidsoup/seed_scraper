@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const mysql = require("mysql");
+//const mysql = require("mysql");
 const cron = require("node-cron");
 const path = require("path");
 const csv = require("csvtojson");
@@ -8,16 +8,39 @@ const fastcsv = require("fast-csv");
 const fs = require("fs");
 const server = express();
 
+var mysql = require('mysql2');
+var url = require("url");
+var SocksConnection = require('socksjs');
+var remote_options = {
+  host: process.env.HOST,
+  port: 3306
+};
+
+var proxy = url.parse(process.env.QUOTAGUARDSTATIC_URL);
+var auth = proxy.auth;
+var username = auth.split(":")[0]
+var pass = auth.split(":")[1]
+
+var sock_options = {
+  host: proxy.hostname,
+  port: 1080,
+  user: username,
+  pass: pass
+}
+
+var sockConn = new SocksConnection(remote_options, sock_options);
+
 server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
 console.log(process.env.DB_USER);
 const con = mysql.createConnection({
-  host: process.env.HOST,
   database: process.env.DATABASE,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  port: 3306
+  stream: sockConn
 });
+
+// https://support.quotaguard.com/support/solutions/articles/5000543888-accessing-a-mysql-database-via-a-static-ip-from-node-js-
 
 con.on('error', function(err) {
   throw err;
