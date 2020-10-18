@@ -33,6 +33,7 @@ var sockConn = new SocksConnection(remote_options, sock_options);
 server.use(express.static('csv'))
 const port = process.env.PORT || 3000;
 console.log(process.env.DB_USER);
+
 const con = mysql.createConnection({
   database: process.env.DATABASE,
   user: process.env.DB_USER,
@@ -184,12 +185,12 @@ const createCSV = async () => {
     .write(products, { headers: true })
     .on("finish", function() {
       console.log(`Wrote to csv`);
-      con.end(function(err) {
+/*       con.end(function(err) {
         if (err) {
           return console.log('error:' + err.message);
         }
         console.log('Closing the database connection.');
-      });
+      }); */
 
     })
     .pipe(fs.createWriteStream(`csv/products.csv`));
