@@ -185,12 +185,12 @@ const createCSV = async () => {
     .write(products, { headers: true })
     .on("finish", function() {
       console.log(`Wrote to csv`);
-/*       con.end(function(err) {
+      con.end(function(err) {
         if (err) {
           return console.log('error:' + err.message);
         }
         console.log('Closing the database connection.');
-      }); */
+      });
 
     })
     .pipe(fs.createWriteStream(`csv/products.csv`));
