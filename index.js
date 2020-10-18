@@ -211,13 +211,9 @@ server.get('/get-products', (req, res) => {
 
 });
 
-// STATIC IP for whitlisting on hostmonster
-//https://github.com/mysqljs/mysql/issues/725
-
 // TODO: schedule tasks to be run on the server
-cron.schedule("0 0 */12 * * *", () => {
-
-  console.log("created CSV");
+cron.schedule('* * * * *', () => {
+  console.log('running a task every minute');
 });
 
 // Starts the server
