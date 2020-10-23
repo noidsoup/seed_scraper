@@ -222,7 +222,7 @@ server.get('/get-products', (req, res) => {
 cron.schedule('0 0 */12 * * *', function(){
   console.log('running a task every twelve hours');
   
-  connection();
+  //connection();
 
 });
 
