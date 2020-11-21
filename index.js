@@ -151,13 +151,13 @@ const returnVariations = (options, parentProduct) => {
     // child products don't need categories
     const childProduct = {
       title: parentProduct.title,
-      // check with dad if this is indeed used to designate out of stock items
       active: parentProduct.active,
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
       quantity: quantityAndPrice[0],
       price: quantityAndPrice[1],
+      status: parentProduct.active === "instock" ? 'publish' : 'draft',
     }
 
     variations.push(childProduct);
@@ -173,7 +173,7 @@ const formatData = (items, options, categories) => {
 
   // TODO: try giving the parent item a price to see if it fixes problem
   items.forEach((item) => {
-    
+    //console.log(item.Active);
     const parentProduct = {
       id: item.ID,
       parentProductId: null,
@@ -182,22 +182,19 @@ const formatData = (items, options, categories) => {
       description: item.Description,
       quantity: null,
       price: null,
-      // condition ? exprIfTrue : exprIfFalse
       active: item.Active === "Yes" ? 'instock' : 'outofstock',
       status: item.Active === "Yes" ? 'publish' : 'draft',
 
     };
 
-    
-
-
     const variations = returnVariations(options, parentProduct);
     if (variations) {
       formattedData.push(parentProduct, ...variations);
     } else {
-      //console.log('no variation!', parentProduct);
-
-      parentProduct.status = 'draft';
+      
+      if (parentProduct.active === 'instock') {
+        parentProduct.status = 'draft';
+      }
       formattedData.push(parentProduct);
     }
 
