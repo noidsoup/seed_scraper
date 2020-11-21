@@ -57,8 +57,7 @@ const connection = () => {
           throw err;
         } else {
           console.log('pretending to retry connection');
-          // connection();
-          throw err;
+          //connection();
         }
 
       }, 8000);
@@ -174,6 +173,7 @@ const formatData = (items, options, categories) => {
 
   // TODO: try giving the parent item a price to see if it fixes problem
   items.forEach((item) => {
+    
     const parentProduct = {
       id: item.ID,
       parentProductId: null,
@@ -183,15 +183,21 @@ const formatData = (items, options, categories) => {
       quantity: null,
       price: null,
       // condition ? exprIfTrue : exprIfFalse
-      active: item.Active === "Yes" ? 'instock' : 'outofstock'
+      active: item.Active === "Yes" ? 'instock' : 'outofstock',
+      status: item.Active === "Yes" ? 'publish' : 'draft',
+
     };
 
+    
 
 
     const variations = returnVariations(options, parentProduct);
     if (variations) {
       formattedData.push(parentProduct, ...variations);
     } else {
+      //console.log('no variation!', parentProduct);
+
+      parentProduct.status = 'draft';
       formattedData.push(parentProduct);
     }
 
