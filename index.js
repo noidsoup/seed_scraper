@@ -42,12 +42,34 @@ const connection = () => {
     stream: sockConn
   });
 
-  con.on('error', function(err) {
-    throw err;
+  con.on('error', function (err) {
+
+
+    let retries = 0;
+
+    if (err) {
+      console.error(err);
+
+      retries = retries + 1;
+
+      setTimeout(function () {
+        if (retries > 3) {
+          throw err;
+        } else {
+          connection();
+        }
+
+      }, 8000);
+    }
+
+
+
+
+
   });
-  
+
   createCSV(con);
-  
+
 }
 
 
@@ -66,7 +88,7 @@ const query = (table, con) => {
 
       fastcsv
         .write(jsonData, { headers: true })
-        .on("finish", function() {
+        .on("finish", function () {
           console.log(`Wrote to ${table}.csv`);
           resolve();
         })
@@ -162,7 +184,7 @@ const formatData = (items, options, categories) => {
       active: item.Active === "Yes" ? 'instock' : 'outofstock'
     };
 
-    
+
 
     const variations = returnVariations(options, parentProduct);
     if (variations) {
@@ -170,7 +192,7 @@ const formatData = (items, options, categories) => {
     } else {
       formattedData.push(parentProduct);
     }
-    
+
   });
 
   return formattedData;
@@ -192,9 +214,9 @@ const createCSV = async (con) => {
 
   fastcsv
     .write(products, { headers: true })
-    .on("finish", function() {
+    .on("finish", function () {
       console.log(`Wrote to csv`);
-      con.end(function(err) {
+      con.end(function (err) {
         if (err) {
           return console.log('error:' + err.message);
         }
@@ -210,19 +232,9 @@ server.get("/pull-database", (req, res) => {
   res.send("createing csv");
 });
 
-server.get('/get-products', (req, res) => {
-
-  fs.readFile('./csv/products.csv', (err, json) => {
-    if (err) return err;
-    let obj = JSON.parse(json);
-    res.json(obj);
-  });
-
-});
-
-cron.schedule('0 0 */12 * * *', function(){
+cron.schedule('0 0 */12 * * *', function () {
   console.log('running a task every twelve hours');
-  
+
   //connection();
 
 });
