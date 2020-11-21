@@ -213,8 +213,8 @@ server.get('/get-products', (req, res) => {
 
   fs.readFile('./csv/products.csv', (err, json) => {
     if (err) throw err;
-      let obj = JSON.parse(json);
-      res.json(obj);
+    let obj = JSON.parse(json);
+    res.json(obj);
   });
 
 });
