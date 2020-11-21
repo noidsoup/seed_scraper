@@ -148,6 +148,7 @@ const formatData = (items, options, categories) => {
 
   const formattedData = [];
 
+  // TODO: try giving the parent item a price to see if it fixes problem
   items.forEach((item) => {
     const parentProduct = {
       id: item.ID,
@@ -212,7 +213,7 @@ server.get("/pull-database", (req, res) => {
 server.get('/get-products', (req, res) => {
 
   fs.readFile('./csv/products.csv', (err, json) => {
-    if (err) throw err;
+    if (err) return err;
     let obj = JSON.parse(json);
     res.json(obj);
   });
