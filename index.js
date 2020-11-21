@@ -56,7 +56,9 @@ const connection = () => {
         if (retries > 3) {
           throw err;
         } else {
-          connection();
+          console.log('pretending to retry connection');
+          // connection();
+          throw err;
         }
 
       }, 8000);
