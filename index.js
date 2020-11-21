@@ -157,7 +157,7 @@ const returnVariations = (options, parentProduct) => {
       description: parentProduct.description,
       quantity: quantityAndPrice[0],
       price: quantityAndPrice[1],
-      status: parentProduct.active === "instock" ? 'publish' : 'draft',
+      status: parentProduct.active === "instock" ? 'publish' : 'private',
     }
 
     variations.push(childProduct);
@@ -183,7 +183,7 @@ const formatData = (items, options, categories) => {
       quantity: null,
       price: null,
       active: item.Active === "Yes" ? 'instock' : 'outofstock',
-      status: item.Active === "Yes" ? 'publish' : 'draft',
+      status: item.Active === "Yes" ? 'publish' : 'private',
 
     };
 
@@ -193,7 +193,7 @@ const formatData = (items, options, categories) => {
     } else {
       
       if (parentProduct.active === 'instock') {
-        parentProduct.status = 'draft';
+        parentProduct.status = 'private';
       }
       formattedData.push(parentProduct);
     }
