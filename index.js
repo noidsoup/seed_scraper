@@ -153,12 +153,15 @@ const returnVariations = (options, parentProduct) => {
     const childProduct = {
       title: parentProduct.title,
       // check with dad if this is indeed used to designate out of stock items
-      active: parentProduct.active,
+      
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
       quantity: quantityAndPrice[0],
       price: quantityAndPrice[1],
+      active: parentProduct.active,
+      visibility: parentProduct.visibility,
+      stock: parentProduct.stock,
     }
 
     variations.push(childProduct);
@@ -184,7 +187,9 @@ const formatData = (items, options, categories) => {
       quantity: null,
       price: null,
       // condition ? exprIfTrue : exprIfFalse
-      active: item.Active === "Yes" ? 'instock' : 'outofstock',
+      active: item.Active,
+      visibility: item.Active === "Yes" ? 'visible' : 'hidden',
+      stock: item.Active === "Yes" ? 'instock' : 'outofstock',
     };
 
     if (item.Item === 'Agave americana variegata') {
@@ -199,6 +204,7 @@ const formatData = (items, options, categories) => {
     } else {
 
       console.log('no variations!', parentProduct);
+      parentProduct.active = 'outofstock';
       formattedData.push(parentProduct);
     }
 
