@@ -176,7 +176,8 @@ const formatData = (items, options, categories) => {
     //console.log(item.Active);
     const parentProduct = {
       id: item.ID,
-      parentProductId: null,
+      // what happens when you set this?
+      parentProductId: item.ID,
       title: item.Item,
       categories: returnCategories(item, categories),
       description: item.Description,
