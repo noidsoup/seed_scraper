@@ -84,7 +84,7 @@ const query = (table, con) => {
 
   return new Promise((resolve, reject) => {
     con.query(`SELECT * FROM ${table}`, (err, data, fields) => {
-      if (err) throw err;
+      if (err) console.log(err);
 
       const jsonData = JSON.parse(JSON.stringify(data));
 
@@ -145,15 +145,16 @@ const returnVariations = (options, parentProduct) => {
   if (!result || !result.Attributes) return;
 
   const variations = [];
-
+  console.log(parentProduct.visibility, result.Active)
   result.Attributes.split('~').forEach((item, index) => {
     const quantityAndPrice = item.split(":");
-
+    
     // child products don't need categories
     const childProduct = {
       title: parentProduct.title,
       // check with dad if this is indeed used to designate out of stock items
-      active: parentProduct.active,
+      visibility: parentProduct.visibility,
+      stock: parentProduct.visibility,
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
@@ -174,7 +175,7 @@ const formatData = (items, options, categories) => {
 
   // TODO: try giving the parent item a price to see if it fixes problem
   items.forEach((item) => {
-    
+    //console.log(item);
     const parentProduct = {
       id: item.ID,
       parentProductId: null,
@@ -184,13 +185,22 @@ const formatData = (items, options, categories) => {
       quantity: null,
       price: null,
       // condition ? exprIfTrue : exprIfFalse
-      active: item.Active === "Yes" ? 'instock' : 'outofstock'
+      stock: item.OutOfStock === "Yes" ? 'instock' : 'outofstock',
+      visibility: item.Active === "Yes" ? 'visible' : 'hidden'
     };
+
+    if (item.Item === 'Agave americana variegata') {
+      //console.log(parentProduct, returnVariations(options, parentProduct));
+    }
 
     const variations = returnVariations(options, parentProduct);
     if (variations) {
+
+
       formattedData.push(parentProduct, ...variations);
     } else {
+
+      //console.log('no variations!', parentProduct);
       formattedData.push(parentProduct);
     }
 
