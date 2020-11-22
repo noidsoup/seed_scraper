@@ -184,7 +184,7 @@ const formatData = (items, options, categories) => {
       quantity: null,
       price: null,
       // condition ? exprIfTrue : exprIfFalse
-      active: item.Active === "Yes" ? 'visible' : 'hidden'
+      active: item.Active === "Yes" ? 'outofstock' : 'instock'
     };
 
     const variations = returnVariations(options, parentProduct);
