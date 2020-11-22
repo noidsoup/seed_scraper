@@ -57,7 +57,8 @@ const connection = () => {
           throw err;
         } else {
           console.log('pretending to retry connection');
-          //connection();
+          // connection();
+          throw err;
         }
 
       }, 8000);
@@ -151,13 +152,13 @@ const returnVariations = (options, parentProduct) => {
     // child products don't need categories
     const childProduct = {
       title: parentProduct.title,
+      // check with dad if this is indeed used to designate out of stock items
       active: parentProduct.active,
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
       quantity: quantityAndPrice[0],
       price: quantityAndPrice[1],
-      status: parentProduct.active === "instock" ? 'publish' : 'private',
     }
 
     variations.push(childProduct);
@@ -173,29 +174,26 @@ const formatData = (items, options, categories) => {
 
   // TODO: try giving the parent item a price to see if it fixes problem
   items.forEach((item) => {
-    //console.log(item.Active);
+    
     const parentProduct = {
       id: item.ID,
-      // what happens when you set this?
-      parentProductId: item.ID,
+      parentProductId: null,
       title: item.Item,
       categories: returnCategories(item, categories),
       description: item.Description,
       quantity: null,
       price: null,
-      active: item.Active === "Yes" ? 'instock' : 'outofstock',
-      status: item.Active === "Yes" ? 'publish' : 'private',
-
+      // condition ? exprIfTrue : exprIfFalse
+      active: item.Active === "Yes" ? 'visible' : 'hidden'
     };
+
+    console.log
+
 
     const variations = returnVariations(options, parentProduct);
     if (variations) {
       formattedData.push(parentProduct, ...variations);
     } else {
-      
-      if (parentProduct.active === 'instock') {
-        parentProduct.status = 'private';
-      }
       formattedData.push(parentProduct);
     }
 
