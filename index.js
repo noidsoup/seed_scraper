@@ -177,7 +177,7 @@ const formatData = (items, options, categories) => {
     
     const parentProduct = {
       id: item.ID,
-      parentProductId: null,
+      //parentProductId: null,
       title: item.Item,
       categories: returnCategories(item, categories),
       description: item.Description,
@@ -186,9 +186,6 @@ const formatData = (items, options, categories) => {
       // condition ? exprIfTrue : exprIfFalse
       active: item.Active === "Yes" ? 'visible' : 'hidden'
     };
-
-    console.log
-
 
     const variations = returnVariations(options, parentProduct);
     if (variations) {
