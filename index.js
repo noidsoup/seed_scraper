@@ -145,7 +145,7 @@ const returnVariations = (options, parentProduct) => {
   if (!result || !result.Attributes) return;
 
   const variations = [];
-  console.log(parentProduct.visibility, result.Active)
+  //console.log(parentProduct.visibility, result.Active)
   result.Attributes.split('~').forEach((item, index) => {
     const quantityAndPrice = item.split(":");
     
@@ -154,7 +154,7 @@ const returnVariations = (options, parentProduct) => {
       title: parentProduct.title,
       // check with dad if this is indeed used to designate out of stock items
       visibility: parentProduct.visibility,
-      stock: parentProduct.visibility,
+      stock: parentProduct.stock,
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
