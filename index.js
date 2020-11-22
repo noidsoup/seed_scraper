@@ -177,7 +177,7 @@ const formatData = (items, options, categories) => {
     
     const parentProduct = {
       id: item.ID,
-      //parentProductId: null,
+      parentProductId: null,
       title: item.Item,
       categories: returnCategories(item, categories),
       description: item.Description,
