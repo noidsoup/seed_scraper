@@ -1007,7 +1007,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 1006,1026,1,Sizes available,Drop Down,"25 seeds:1.50~100 seeds:3.50~500 seeds:15.00~1,000 seeds:28.00",Yes
 1007,1027,1,Sizes available,Drop Down,25 seeds:1.75,Yes
 1008,1028,1,Sizes available,Drop Down,"25 seeds:1.50~100 seeds:3.50~500 seeds:12.00~1,000 seeds:18.00~5,000 seeds:60.00",Yes
-1009,1029,1,Sizes available,Drop Down,25 seeds:1.75~100 seeds:5,Yes
+1009,1029,1,Sizes available,Drop Down,25 seeds:1.75,Yes
 5132,5211,1,Sizes available,Drop Down,25 seeds:1.75,Yes
 1010,1030,1,Sizes available,Drop Down,"500 seeds:16.00~1,000 seeds :25.00",Yes
 1011,1031,1,Sizes available,Drop Down,25 seeds:1.50~100 seeds:3.50~500 seeds:13.50~1000 seeds:25.00,Yes
@@ -2079,7 +2079,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 2663,2709,1,Select quantity,Drop Down,"500 seeds:35.00~1,000 seeds:50.00",Yes
 2060,2095,1,Sizes available,Drop Down,"100 seeds:3.35~1,000 seeds:18.00",Yes
 4148,4209,1,Select quantity,Drop Down,27 seeds:1.75,Yes
-2064,2099,1,Sizes available,Drop Down,25 seeds:2.5~100 seeds:7~500 seeds:30.00~1000 seeds:50.00~5000 seeds:200,Yes
+2064,2099,1,Sizes available,Drop Down,25 seeds:2.5~100 seeds:7,Yes
 2065,2100,1,Sizes available,Drop Down,25 seeds:2.00~100 seeds:7,Yes
 2066,2101,1,Sizes available,Drop Down,"500 seeds:30.00~1,000 seeds:45.00",Yes
 2067,2102,1,Sizes available,Drop Down,25 seeds:2.00~100 seeds:7.00,Yes
@@ -2277,7 +2277,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 2232,2273,1,Sizes available,Drop Down,10 seeds:4.00,Yes
 2233,2274,1,Sizes available,Drop Down,"10 seeds:2.00~25 seeds:4.00~100 seeds:15.00~500 seeds:50.00~1,000 seeds:90",Yes
 2235,2276,1,Sizes available,Drop Down,"25 seeds:1.50~100 seeds:3.50~500 seeds:13.5~1,000 seeds:22.00",Yes
-2236,2277,1,Sizes available,Drop Down,"25 seeds:1.50~100 seeds:3.50~500 seeds:13.50~1,000 seeds:24.00~5,000 seeds:75.00",Yes
+2236,2277,1,Sizes available,Drop Down,25 seeds:1.50,Yes
 2237,2278,1,Sizes available,Drop Down,"100 seeds:5~500 seeds:15~1,000 seeds:25.00~5,000 seeds:80.00",Yes
 2238,2279,1,Sizes available,Drop Down,25 seeds:2.35,Yes
 2239,2280,1,Sizes available,Drop Down,25 seeds:2.65,Yes
@@ -4015,7 +4015,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 4171,4233,1,Select quantity,Drop Down,100 seeds:5.00~500 seeds:15.00~1000 seeds:25.00,Yes
 4210,4274,1,Select quantity,Drop Down,25 seeds:1.75~100 seeds:5.00~500 seeds:18.00~1000 seeds:30.00~5000 seeds:100.00,Yes
 4067,4124,1,Select quantity,Drop Down,100 seeds:25.00~500 seeds:75.00~1000 seeds:150.00,Yes
-4120,4179,1,Select quantity,Drop Down,"25 seeds:3.5~100 seeds:10.00~500 seeds:40.00~1000 seeds:65.00~5,000 seeds:200.00",Yes
+4120,4179,1,Select quantity,Drop Down,25 seeds:3.5,Yes
 4068,4125,1,Select quantity,Drop Down,10 seeds:3.5,Yes
 4069,4126,1,Select quantity,Drop Down,25 seeds:1.50~100 seeds:3.50~500 seeds:13.50~1000 seeds:20.00~5000 seeds:75.00,Yes
 4070,4127,1,Select Size,Drop Down,12 inch cutting:40.00,Yes
@@ -4055,7 +4055,7 @@ ID,ItemID,OptionNum,Name,Type,Attributes,Active
 4123,4182,1,Select quantity,Drop Down,"25 seeds:3.50~100 seeds:10.00~500 seeds:40.00~1000 seeds:65.00~5,000 seeds:200.00",Yes
 4124,4183,1,Select quantity,Drop Down,"500 seeds:40.00~1000 seeds:75.00~5,000 seeds:285.00",Yes
 4125,4184,1,Select quantity,Drop Down,25 seeds:3.75~100 seeds:10.00~500 seeds:35.00~1000 seeds:62.00,Yes
-4126,4185,1,Select quantity,Drop Down,25 seeds:3.50~100 seeds:12.00~500 seeds:45.00~1000 seeds:75.00~5000 seeds:300.00,Yes
+4126,4185,1,Select quantity,Drop Down,25 seeds:3.50,Yes
 4127,4186,1,Select quantity,Drop Down,25 seeds:3.50~100 seeds:12.00~500 seeds:50.00~1000 seeds:90.00,Yes
 4128,4188,1,Select quantity,Drop Down,500 seeds:40.00~1000 seeds:70.00,Yes
 4129,4189,1,Select quantity,Drop Down,"25 seeds:3.50~100 seeds:10.00~500 seeds:40.00~1000 seeds:75.00~5,000 seeds:200.00",Yes
