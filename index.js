@@ -152,8 +152,6 @@ const returnVariations = (options, parentProduct) => {
     // child products don't need categories
     const childProduct = {
       title: parentProduct.title,
-      // check with dad if this is indeed used to designate out of stock items
-      
       parentProductId: parentProduct.id,
       id: `${parentProduct.id}-variation-${index}`,
       description: parentProduct.description,
